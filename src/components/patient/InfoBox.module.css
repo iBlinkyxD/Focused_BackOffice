@@ -1,0 +1,129 @@
+.box {
+    background-color: var(--White);
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 32px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--Dark-blue);
+    margin: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0 0 0;
+    color: var(--Dark-blue);
+}
+
+.data {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Dark-cyan);
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.default_btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.default_btn:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.table_container {
+    overflow-x: auto;
+    margin: 16px 0 0 0;
+}
+
+.medication_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.medication_table th,
+.medication_table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.medication_table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.medication_table td {
+    color: #333;
+}
+
+.medication_table tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 1340px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .box, .box2{
+        height: 100%;
+    }
+
+    .group{
+        width: 100%;
+    }
+
+    .group p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .row2{
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+}

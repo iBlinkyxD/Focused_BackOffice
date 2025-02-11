@@ -1,0 +1,151 @@
+.form_container {
+    width: 400px;
+}
+
+.form_title {
+    position: static;
+    margin: 32px 0 32px 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.error_message {
+    color: var(--Soft-red);
+    font-size: 12px;
+    margin: 8px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.input_group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--White);
+}
+
+.input_group input {
+    margin-top: 8px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: var(--White);
+    border: 1px solid var(--White);
+}
+
+/* Error styles for inputs */
+.input_group input.error_input,
+.input_group select.error_input,
+.input_group2 input.error_input {
+    border: 1px solid var(--Soft-red);
+}
+
+/* Error styles for labels */
+.input_group label.error_label,
+.input_group2 label.error_label {
+    color: var(--Soft-red);
+}
+
+.btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next_btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 24px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+}
+
+.next_btn:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.previous_btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 24px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Gray);
+    color: var(--White);
+}
+
+.previous_btn:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.checkbox_container {
+    margin-top: 8px;
+    padding: 8px 8px 8px 0;
+    font-size: 16px;
+}
+
+.checkbox_container label{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.checkbox_container label input{
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+    .form_container {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_title {
+        width: 280px;
+        text-align: center;
+    }
+
+    .input_group input {
+        width: 246px;
+    }
+
+    .btn_container{
+        width: 280px;
+    }
+
+    .previous_btn{
+        width: 120px;
+    }
+
+    .next_btn{
+        width: 120px;
+    }
+
+    .checkbox_container {
+        width: 272px;
+        margin-top: 8px;
+        padding: 8px 8px 8px 0;
+        font-size: 16px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,193 @@
+.schedule {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--Dark-blue);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0 26px 0;
+}
+
+.calendarIcon {
+  width: 32px;
+  text-decoration: none;
+  color: var(--Dark-blue);
+}
+
+.calendarIcon:hover {
+  color: var(--Dark-cyan);
+}
+
+.daysContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 16px 0;
+}
+
+.dayCard {
+  width: 60px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: #DFECE6;
+  background-color: var(--Dark-cyan);
+  border: 0;
+  cursor: pointer;
+}
+
+.dayCard:hover {
+  background-color: var(--Dark-blue);
+}
+
+.currentDay {
+  background-color: var(--Dark-blue);
+}
+
+.daySpan {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dayLabel {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1140px) {
+  .dayCard {
+    width: 50px;
+    height: 60px;
+    border-radius: 18px;
+  }
+
+  .daySpan {
+    font-size: 18px;
+  }
+
+  .dayLabel {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dayCard {
+    width: 90px;
+    height: 100px;
+    border-radius: 32px;
+  }
+
+  .daySpan {
+    font-size: 24px;
+  }
+
+  .dayLabel {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 950px) {
+  .dayCard {
+    width: 80px;
+    height: 90px;
+    border-radius: 32px;
+  }
+
+  .daySpan {
+    font-size: 20px;
+  }
+
+  .dayLabel {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dayCard {
+    width: 70px;
+    height: 80px;
+    border-radius: 28px;
+  }
+
+  .daySpan {
+    font-size: 16px;
+  }
+
+  .dayLabel {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .dayCard {
+    width: 55px;
+    height: 65px;
+    border-radius: 20px;
+  }
+
+  .daySpan {
+    font-size: 16px;
+  }
+
+  .dayLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 478px) {
+  .dayCard {
+    width: 45px;
+    height: 55px;
+    border-radius: 18px;
+  }
+
+  .daySpan {
+    font-size: 14px;
+  }
+
+  .dayLabel {
+    font-size: 8px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 380px) {
+  .dayCard {
+    width: 35px;
+    height: 45px;
+    border-radius: 14px;
+  }
+
+  .daySpan {
+    font-size: 10px;
+  }
+
+  .dayLabel {
+    font-size: 8px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

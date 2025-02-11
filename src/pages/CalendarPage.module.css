@@ -1,0 +1,64 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    height: auto;
+    margin: 16px auto;
+    padding: 0 32px 0 32px;
+}
+
+.title_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.calendar_container{
+    height: 90%;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--White);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Dark-blue);
+    margin: 16px 0 16px 0;
+}
+
+.appointment_btn{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.appointment_btn:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+@media (max-width: 1600px) {
+    .main_container{
+        width: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .title{
+        font-size: 24px;
+    }
+
+    .calendar_container{
+        padding: 16px;
+    }
+}
+

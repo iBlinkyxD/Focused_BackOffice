@@ -1,0 +1,127 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn_modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    border-radius: 6px;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: var(--White);
+    padding: 64px 0px 64px 0px;
+    border-radius: 20px;
+    width: 380px;
+}
+
+.icon {
+    width: 125px;
+    height: 90px;
+}
+
+.messageText {
+    text-align: center;
+    font-size: 24px;
+    margin: 24px;
+    color: var(--Dark-cyan);
+}
+
+.otpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otpInputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.otpInput {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.signUpButton {
+    display: flex;
+    width: 280px;
+    height: 34px;
+    margin-top: 24px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpButton:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.errorMessage {
+    color: var(--Soft-red);
+    font-size: 12px;
+    margin: 8px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+    .modal_content {
+        padding: 64px 0px 64px 0px;
+        width: 280px;
+    }
+    
+    .icon {
+        width: 85px;
+        height: 70px;
+    }
+
+    .messageText {
+        font-size: 18px;
+    }
+
+    .otpInput {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .signUpButton {
+        width: 225px;
+        height: 34px;
+    }
+}

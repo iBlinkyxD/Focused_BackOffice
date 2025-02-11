@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--White);
+    margin: 0 0 8px 0;
+}
+
+.text {
+    width: 25%;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 16px;
+    color: var(--Dark-blue);
+}
+
+.text2 {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 16px;
+    color: var(--Dark-blue);
+}
+
+.text3 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 16px;
+    color: var(--Dark-blue);
+}
+
+/* Large mobile screens */
+@media (max-width: 520px) {
+    .text, .text2, .text3 {
+        font-size: 14px;
+        margin: 12px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    .text, .text2, .text3 {
+        font-size: 12px;
+        margin: 12px;
+    }
+}

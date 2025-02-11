@@ -1,0 +1,105 @@
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .previous {
+    text-align: left;
+  }
+  
+  .page {
+    text-align: center;
+  }
+  
+  .next {
+    text-align: right;
+  }
+  
+  .paginationButton {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    border: 1px solid var(--Dark-cyan);
+    background-color: var(--White);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: var(--Black);
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .paginationButton:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+    border: 0px;
+  }
+  
+  .activePage {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Dark-blue);
+    color: var(--White);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .disabledButton {
+    margin: 0 5px;
+    padding: 5px 10px;
+    width: 80px;
+    height: 30px;
+    border: 1px solid var(--Dark-blue);
+    background-color: var(--White);
+    color: var(--Black);
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .nextPreButton {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid var(--Dark-cyan);
+    background-color: var(--White);
+    color: var(--Black);
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+    text-align: center;
+  }
+  
+  .nextPreButton:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+  }
+  
+  .nextPreButton:disabled {
+    background-color: var(--Lighter-gray);
+    color: var(--Gray);
+    border: none;
+    cursor: not-allowed;
+  }
+  
+  .ellipsis {
+    padding: 8px 12px;
+    margin: 0 4px;
+    background-color: transparent;
+    color: var(--Black);
+    cursor: default;
+    border: none;
+  }
+
+  @media (max-width: 650px) {
+    .page{
+        display: none;
+    }
+  }
+

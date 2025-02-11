@@ -1,0 +1,174 @@
+
+.form_container {
+    width: 400px;
+}
+
+.form_title {
+    position: static;
+    margin: 32px 0 0 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.input_group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--White);
+}
+
+.input_group input {
+    width: 366px;
+    margin-top: 8px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: var(--White);
+    border: 1px solid var(--White);
+}
+
+.input_group2 {
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.input_group2 label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--White);
+}
+
+.input_group2 input {
+    width: 160px;
+    margin-top: 8px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: var(--White);
+    border: 1px solid var(--White);
+}
+
+/* Error styles for inputs */
+.input_group input.error_input,
+.input_group2 input.error_input {
+    border: 1px solid var(--Soft-red);
+}
+
+/* Error styles for labels */
+.input_group label.error_label,
+.input_group2 label.error_label {
+    color: var(--Soft-red);
+}
+
+.error_message {
+    color: var(--Soft-red);
+    font-size: 12px;
+    margin: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_container {
+    width: 100%;
+}
+
+.next_btn {
+    width: 400px;
+    height: 50px;
+    margin-top: 32px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.next_btn:hover {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+}
+
+.password_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* To position the icon within the input */
+}
+
+.toggle_icon {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    margin: 12px 0 0 -32px;
+    /* Adjust position as needed */
+    z-index: 1;
+    /* Ensure it appears above the input */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+    .form_container {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .error_container {
+        width: 280px;
+    }
+
+
+    .form_title {
+        width: 280px;
+        text-align: center;
+    }
+
+    .input_group input {
+        width: 246px;
+    }
+
+    .row {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .input_group2 {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    .input_group2 label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .input_group2 input {
+        width: 246px;
+        margin-top: 8px;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .next_btn {
+        width: 280px;
+    }
+}
